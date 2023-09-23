@@ -22,7 +22,8 @@ const addInput = (keyValue) => {
     newDivElem.style.marginTop = '10px'
     newDivElem.appendChild(newElem_1)
     newDivElem.appendChild(newElem_2)
-    document.querySelectorAll('.form')[keyValue].insertBefore(newDivElem, document.querySelector(!keyValue ? '.add-teacher' : '.add-student'))
+    document.querySelectorAll('.form')[keyValue].insertBefore(newDivElem, 
+    document.querySelector(!keyValue ? '.add-teacher' : '.add-student'))
 }
 
 
