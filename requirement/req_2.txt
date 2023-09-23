@@ -1,4 +1,3 @@
-
 1.what is ecmascript?
 1.ECMAScript, along with the Document Object Model,
 works similarly to current implementations of JScript and JavaScript.
@@ -6,12 +5,50 @@ ECMAScript become a programming language that is supported by almost all modern 
 ECMAScript is object-oriented and is considered a mainstream programming language
 
 2.filter,map,find,findIndex,foreach,some,every
-3.for in versus for of
+2.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+filter : 
+This method executes a function for each item of an array,
+then those items that pass the condition of the function are displayed in the output.
+map : 
+This method applies a series of operations on each member of the array and pours the output into a new array.
+find : 
+This method returns the first member for which our desired condition is satisfied. 
+Using this method is good for when we have an array of several objects and each of these objects contains a specific field,
+for example id.
+findIndex: 
+Using the findIndex() method, we can search the array items and display the index number of the first result obtained in the output.
+some : 
+If we want to check if at least one member of the array accept our desired condition, we use this method.
+The output of this method is true if our condition is met for at least one member of the array. otherwise false
+every :
+This method is used if we want to check whether all the members of the array accept a condition.
+The output of the method is Boolean and is true only if all members of the array satisfy the condition.
+foreach : 
+for-in : 
+If we have an object, we can browse its keys (properties) with this type of for. How to write it is as follows
+for-of :
+This loop iterates over the values of the Iterable objects. Iterable is something that can be used in a loop. 
+Like a regular array. Normal objects that are { } are not iterable by default; That means we cannot use them in rings.
+But they can be made iterable with methods.
+sort : 
+The sort method sorts the members of an array. By default, this sort is in ascending order.
+Before starting the sorting, the array members are temporarily converted to strings and then the sorting is done.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.for-in versus for-of
+3.usually we use for-in for objects but we use for-of for arrays
+
 4.find versus filter
+4.The filter() method returns an array that contains the element that meets the condition,
+but the find() method itself returns the element that contains the specified condition. In the filter() method,
+even though the searched element is at the beginning, the method is repeated over the entire array.
+
 5.map versus foreach
+5.The main difference between map and forEach is that the map method returns a new array by
+applying a callback function to each element of the array,
+while the forEach method does not return anything.
+
 6.some versus every
-2.filter,map,find,findIndex,foreach,some,every
-3.for in versus for of
-4.find versus filter
-5.map versus foreach
-6.some versus every
+6. in some method if any member accept condition some method return true ,
+but in every method all members must accept condition to return true
