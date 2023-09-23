@@ -1,0 +1,17 @@
+
+1.what is ecmascript?
+1.ECMAScript, along with the Document Object Model,
+works similarly to current implementations of JScript and JavaScript.
+ECMAScript become a programming language that is supported by almost all modern web browsers.
+ECMAScript is object-oriented and is considered a mainstream programming language
+
+2.filter,map,find,findIndex,foreach,some,every
+3.for in versus for of
+4.find versus filter
+5.map versus foreach
+6.some versus every
+2.filter,map,find,findIndex,foreach,some,every
+3.for in versus for of
+4.find versus filter
+5.map versus foreach
+6.some versus every
