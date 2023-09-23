@@ -1,10 +1,10 @@
-1.what is ecmascript?
+1.what is ECMASCRIPT or ES?
 1.ECMAScript, along with the Document Object Model,
 works similarly to current implementations of JScript and JavaScript.
 ECMAScript become a programming language that is supported by almost all modern web browsers.
 ECMAScript is object-oriented and is considered a mainstream programming language
 
-2.filter,map,find,findIndex,foreach,some,every
+2.learn Array methods like : filter - map - find - findIndex - foreach - some - every
 2.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 filter : 
@@ -32,23 +32,26 @@ This loop iterates over the values of the Iterable objects. Iterable is somethin
 Like a regular array. Normal objects that are { } are not iterable by default; That means we cannot use them in rings.
 But they can be made iterable with methods.
 sort : 
-The sort method sorts the members of an array. By default, this sort is in ascending order.
+The sort method sorts the me
+mbers of an array. By default, this sort is in ascending order.
 Before starting the sorting, the array members are temporarily converted to strings and then the sorting is done.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-3.for-in versus for-of
+3.what is the difference between for in and for of ?
 3.usually we use for-in for objects but we use for-of for arrays
 
-4.find versus filter
+4.what is the difference between find and filter?
 4.The filter() method returns an array that contains the element that meets the condition,
 but the find() method itself returns the element that contains the specified condition. In the filter() method,
 even though the searched element is at the beginning, the method is repeated over the entire array.
 
 5.map versus foreach
-5.The main difference between map and forEach is that the map method returns a new array by
+5.what is the difference between map and forEach ?
 applying a callback function to each element of the array,
 while the forEach method does not return anything.
 
-6.some versus every
-6. in some method if any member accept condition some method return true ,
+6.what is the difference between some and every ?
+6.in some method if any member accept condition some method return true ,
 but in every method all members must accept condition to return true
+
+
