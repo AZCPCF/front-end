@@ -1,0 +1,33 @@
+1. what is node and npm ?
+
+1 . pakage manager for install and manage javascript libraries
+
+2. what is classList ?
+
+2 . method for manage classes of HTML elements with javascript
+
+3. what is querySelector and querySelectorAll ? and diffrence between them
+
+3 . method for select and manage HTML elements easily with tags, classes, ids, attributes, etc
+
+4. what is template String ?
+
+4 . we allow to use strings or embedded expressions in the form of a string with this method
+
+5.what is createElement Document?
+
+5 . method for create HTML elements in javascript
+
+6.what is appendChild Document?
+
+6 . when we create element with createElement method we need add it to html with appendChild method
+
+7.what is trim ?
+
+7 . we use trim method when we want clear all spaces in strings
+
+8.what is git ? 
+
+8 . git is a one of the best control system ,we can manage,download,upload and do many work our local files with github or etc
+
+
