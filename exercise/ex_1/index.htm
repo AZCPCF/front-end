@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .form{
+        margin: auto;
+        max-width: 100%;
+        display: block;
+        width: 400px;
+      }
+     .q-input{
+        background: white;
+        border: 1px solid #a2a2a2;
+        outline: none;
+        transition: 0.3s;
+        padding: 4px;
+        width: 47%;
+        border-radius: 5px;
+      }
+      .q-input:focus{
+        background-color: #f0f0f0;
+        color: black;
+      }
+      input[type=button]{
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #a2a2a2;
+        padding: 4px;
+        transition: 0.3s;
+      }
+      input[type=button]:hover{
+        background-color: #d3d3d3;
+      }
+      /* .keyValue-box{
+        display: flex;
+        justify-content: space-between;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div id="container" >
+            
+      <div class="form">
+        <h2 >teacher</h2>
+        <div class="keyValue-box">
+          <input class="q-input" type="text" placeholder="name" />
+          <input class="q-input" type="text" placeholder="lastname" />
+        </div>
+        <input
+          class="add-teacher"
+          style="width: 100%; margin-top: 5px"
+          type="button"
+          value="ADD"
+          onclick="addInput(0)"
+          />
+        </div>
+        
+        
+        <div class="form">
+        <h2>student</h2>
+        <div class="keyValue-box">
+          <input class="q-input" type="text" placeholder="name" />
+          <input class="q-input" type="text" placeholder="lastname" />
+        </div>
+        <input
+        class="add-student"
+        style="width: 100%; margin-top: 5px"
+        type="button"
+        value="ADD"
+        onclick="addInput(1)"
+        />
+
+        <input
+        class="print"
+        style="width: 100%; margin-top: 5px"
+        type="button"
+        value="Print"
+        onclick="Print()"
+        />
+
+        <h2>Result</h2>
+        <div class="res">
+
+        </div>
+
+      </div>
+
+    </div>
+      
+  <script src="main.js"></script>
+  </body>
+</html>
