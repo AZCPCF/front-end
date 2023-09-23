@@ -29,5 +29,4 @@ const removeDuplicate = () => {
     let numbers = getNumbers();
     let res = numbers.filter((item, index) => numbers.indexOf(item) === index)
     s = `without duplicate : ${res}`
-
 }
