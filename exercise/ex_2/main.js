@@ -1,7 +1,7 @@
 const getNumbers = () => {
     return document.querySelector('input').value.split(' ')
 }
-
+let span = document.querySelector('span').innerHTML
 const findMax = () => {
     let max = 0
     for (const numb of getNumbers()) {
@@ -9,7 +9,7 @@ const findMax = () => {
             max = numb
         }
     }
-    document.querySelector('span').innerText = `max : ${Number(max)}`
+    s = `max : ${Number(max)}`
 }
 
 const findMin = () => {
@@ -17,8 +17,18 @@ const findMin = () => {
     numbers.sort((a, b) => {
         return a - b
     })
-    document.querySelector('span').innerText = `min : ${Number(numbers[0])}`
+    s = `min : ${Number(numbers[0])}`
 }
-// const findDuplicates = () => {
-// }
-// /*method 3 */const removeDuplicate = () => { }
+const findDuplicates = () => {
+    let numbers = getNumbers();
+    let res = numbers.filter((item, index) => numbers.indexOf(item) !== index)
+    s = `duplicates : ${res}`
+}
+
+const removeDuplicate = () => {
+    let numbers = getNumbers();
+    let res = numbers.filter((item, index) => numbers.indexOf(item) === index)
+    s = `without duplicate : ${res}`
+
+}
+
