@@ -1,7 +1,7 @@
 const getNumbers = () => {
     return document.querySelector('input').value.split(' ')
 }
-let span = document.querySelector('span').innerHTML
+let s = document.querySelector('span').innerHTML
 const findMax = () => {
     let max = 0
     for (const numb of getNumbers()) {
@@ -31,4 +31,3 @@ const removeDuplicate = () => {
     s = `without duplicate : ${res}`
 
 }
-
