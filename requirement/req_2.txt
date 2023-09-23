@@ -45,7 +45,6 @@ Before starting the sorting, the array members are temporarily converted to stri
 but the find() method itself returns the element that contains the specified condition. In the filter() method,
 even though the searched element is at the beginning, the method is repeated over the entire array.
 
-5.map versus foreach
 5.what is the difference between map and forEach ?
 applying a callback function to each element of the array,
 while the forEach method does not return anything.
