@@ -32,8 +32,8 @@ This loop iterates over the values of the Iterable objects. Iterable is somethin
 Like a regular array. Normal objects that are { } are not iterable by default; That means we cannot use them in rings.
 But they can be made iterable with methods.
 sort : 
-The sort method sorts the me
-mbers of an array. By default, this sort is in ascending order.
+The sort method sorts the members of an array.
+By default, this sort is in ascending order.
 Before starting the sorting, the array members are temporarily converted to strings and then the sorting is done.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
