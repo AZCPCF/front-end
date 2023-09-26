@@ -1,0 +1,4 @@
+1. what is Rest opreator and spread opreator ?
+2. what is destructring ?
+3. how to define default value for inputs in functions?
+4. what is the Diffrence between Rest opreator and spread opreator ?
