@@ -96,5 +96,5 @@ const removeDuplicate = () => {
 //     }
 // }
 // // use for-of for arrays
-// // yse for-in for objects
+// // use for-in for objects
 // --------------------------------------
