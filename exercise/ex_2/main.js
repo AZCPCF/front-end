@@ -20,12 +20,10 @@ const findMin = () => {
     h2.innerHTML = 'min : '
     p.innerHTML = min
 }
-function showDupes(arr) {
-    return [...new Set(arr.filter((elem, idx) => arr.indexOf(elem) !== idx))]
-  }
 const findDuplicates = () => {
     let numbers = getNumbers()
-    let res = showDupes(numbers)
+    const res = numbers.filter((item, index) => numbers.indexOf(item) !== index && numbers.lastIndexOf(item) === index
+    )
     h2.innerHTML = 'found Duplicates : '
     p.innerHTML = res
 }
@@ -39,15 +37,15 @@ const removeDuplicate = () => {
 
 
 // ----------------------------------------------------------
-// const names = ['ali', 'mohammad', 'reza', 'mohammad']
+const names = ['ali', 'mohammad', 'reza', 'mohammad']
 // const res = names.find(name => name === 'mohammad')
 // const res_1 = names.filter(name => name === 'mohammad')
 // console.log(`${res} \n ${res_1}`)
-// // method filter & find build a new array and 
-// // push data to in filter method check condition 
-// // for all elements but find method get break 
-// // when find first item 
-// // findIndex method as find method but return 
+// // method filter & find build a new array and
+// // push data to in filter method check condition
+// // for all elements but find method get break
+// // when find first item
+// // findIndex method as find method but return
 // // index of first item founded
 // names.forEach((item, index) => {
 //     return names[index] = { name: item }
@@ -58,7 +56,7 @@ const removeDuplicate = () => {
 // })
 // console.log(names)
 // console.log(numbers)
-// // we use foreach method when we want  
+// // we use foreach method when we want
 // // add any operation or etc
 // // but we use map when we want add any
 // // operation or etc snd push it to new array
@@ -77,7 +75,7 @@ const removeDuplicate = () => {
 // // in some method if one item accept condition ,
 // //  some method return true
 // // in every method all item must
-// //  accept condition 
+// //  accept condition
 // // to every method return true
 // const namesForIn = {
 //     name: 'ali',
