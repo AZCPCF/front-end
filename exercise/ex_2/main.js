@@ -22,7 +22,8 @@ const findMin = () => {
 }
 const findDuplicates = () => {
     let numbers = getNumbers()
-    const res = numbers.filter((item, index) => numbers.indexOf(item) !== index && numbers.lastIndexOf(item) === index)
+    const res = numbers.filter((item, index) => numbers.indexOf(item) !== index && numbers.lastIndexOf(item) === index && item !== '' )
+    console.log(res);
     h2.innerHTML = 'found Duplicates : '
     p.innerHTML = res
 }
