@@ -37,7 +37,7 @@ const removeDuplicate = () => {
 
 
 // ----------------------------------------------------------
-const names = ['ali', 'mohammad', 'reza', 'mohammad']
+// const names = ['ali', 'mohammad', 'reza', 'mohammad']
 // const res = names.find(name => name === 'mohammad')
 // const res_1 = names.filter(name => name === 'mohammad')
 // console.log(`${res} \n ${res_1}`)
