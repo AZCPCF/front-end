@@ -2,8 +2,10 @@
 1. 
 -----------------------------------------------
 spread operator : 
-spread method allow us to copy all item in arrays or objects to another array or object
+spread operator allow us to copy all item in arrays or objects to another array or object
+rest operator allow us to get items and build array and push items into it 
 rest operator : 
+-----------------------------------------------
 
 2. what is destructing ?
 2. new property from ES6 to get items from array and change items  ; 
