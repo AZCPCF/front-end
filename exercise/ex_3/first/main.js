@@ -8,6 +8,6 @@ const userInfo = () => {
         password: inp('password').value
     }
     let { name,lname } = user
-    inp('one').innerHTML = `last name : ${name}`
-    inp('two').innerHTML = `last name : ${lname}`
+    inp('one').innerHTML = ` name : ${name}`
+    inp('two').innerHTML = `last  name : ${lname}`
 }
