@@ -7,7 +7,7 @@ const userInfo = () => {
         lname: inp('lname').value,
         password: inp('password').value
     }
-    let { password, ...userInfo } = user
-    inp('one').innerHTML += userInfo.name
-    inp('two').innerHTML += userInfo.lname
+    let { name,lname } = user
+    inp('one').innerHTML += name
+    inp('two').innerHTML += lname
 }
