@@ -1,7 +1,9 @@
 const rNumber = () => [13, 12]
 const swapNum = () => {
-    let number = rNumber()
-    let [num2, num1] = number
+    let num1 = [13, 27, 5, 32, 53]
+    let num2 = [12, 32,3, 32, 23];
+
+    [num1, num2] = [num2, num1]
     console.log(`\nnumber 1 : ${num1} \nnumber 2 : ${num2} \n---------------------------`)
 }
 const addNum = (p, p2) => {
