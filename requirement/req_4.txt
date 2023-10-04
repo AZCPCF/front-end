@@ -1,0 +1,14 @@
+1 . what is module?
+1.JavaScript modules allow us to break up your code into separate files.
+2 . what is promises?
+2.Promise is an object representing the eventual completion or failure of an asynchronous operation
+3 . what is async and await?
+3.keyword async  before a function makes the function return a promise
+and await keyword makes the function pause the execution and wait for a resolved promise before it continues
+4 . what is callback function?
+4.a function that is passed as an argument to another function
+5 . what is an api?
+5.An API is a part of an application for providing information. After receiving a request,
+it sends a response along with the requested information to that software.
+6 . what is postman?
+6.Postman is an API platform for building and using APIs
