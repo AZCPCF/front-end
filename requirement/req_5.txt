@@ -1,0 +1,30 @@
+1 . what is framework ?
+1. Usually, programmers use frameworks to develop and design software.
+Using a framework helps to simplify the development of processes.
+2 . what is react ?
+2. React is a free and open-source front-end JavaScript library for building user interfaces based on components
+3 . what is SPA ?
+3. A Single Page Application (SPA) is a web application that loads a single HTML page 
+and dynamically updates its content using JavaScript.
+4 . what is CM and why we use it ?
+4.1. Web Components are actually special APIs that allow us to create our JSX codes 
+in an environment so that they can be used in other programs.
+4.2. we use component to develop our code easier and we can use components in every js libraries and frameworks
+5 . what is JSX?
+5. JSX  help us to write js codes as html codes , jsx not a html code
+Rather, it has a different syntax based on HTML/XML from the JavaScript language and it used together with React codes.
+6 . how to use css in React and what is the difference between pure css and css modules?
+6.1. 2 ways : import separate .css file to application or styling in jsx tags :
+--------------------------------------------
+import from "style/style.css"
+<div>
+    <h1  className = {bg-color}>Hello Style!</h1>
+    <p style={{backgroundColor: "lightblue"}}>Add a little style!</p>
+</div>
+--------------------------------------------
+6.2. The Pure.css framework is a responsive CSS module that can be used without installing it.
+6.3. pure.css is a framework with responsive options but css module is a basic .css files imported to application
+7 . how many methods we can choose to style an element in react?
+7. Inline CSS,Normal CSS,CSS in JS,Styled Components,CSS modules
+8 . what is functional CM and class CM?
+8. A JavaScript or ES6 function that returns a React element is called a functi onal component (JSX).
