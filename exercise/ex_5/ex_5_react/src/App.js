@@ -1,11 +1,11 @@
-import NCM from "./components/cm";
-import NCM2 from "./components/cm2";
+import NewComponent from './components/newComponent';
+import NewComponent2 from './components/newComponent2';
 import './components/style.css'
 function App() {
   return(
     <>
-    <NCM/>
-    <NCM2/>
+    <NewComponent />
+    <NewComponent2 />
     </>
     )
 }
