@@ -1,0 +1,15 @@
+1 . how to output Dynamic data in JSX ?
+1. use {} and write variable between this
+2 . what is props ?
+2. In ReactJS, the data can be passed from one component to another component using these props, 
+similar to how the arguments are passed in a function.
+3 . how to add normal JS logic into CM?
+3. write JS code before return statement in CM
+4 . how to use "props.children" ?
+4. props.children represents the content between the opening 
+and the closing tags when invoking/rendering a component
+5 . what is hooks?
+5. hooks let us use state and other React features without writing a class
+6 . what is state ?  
+6. useState hook It returns an array with two values: the current state and a function to update it.
+The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.
