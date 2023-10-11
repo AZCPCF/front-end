@@ -11,5 +11,4 @@ and the closing tags when invoking/rendering a component
 5 . what is hooks?
 5. hooks let us use state and other React features without writing a class
 6 . what is state ?  
-6. useState hook It returns an array with two values: the current state and a function to update it.
-The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.
+6. useState hook It returns an array with two values: the current state and a function to update it
