@@ -6,7 +6,7 @@ similar to how the arguments are passed in a function.
 3 . how to add normal JS logic into CM?
 3. write JS code before return statement in CM
 4 . how to use "props.children" ?
-4. props.children represents the content between the opening 
+4. props.children represents the content between the opening
 and the closing tags when invoking/rendering a component
 5 . what is hooks?
 5. hooks let us use state and other React features without writing a class
