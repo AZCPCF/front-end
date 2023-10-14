@@ -1,0 +1,17 @@
+1 . how can we listen to user input ?
+1. use onChange event
+2 . how can we save user input values?
+2. <input onChange={params => setInput(params.target.value)}/>
+3 . what is controlled CM and unControlled CM?
+3.1. controlled CM : components which  one their state and behaviour controlled by parent CM
+3.2. uncontrolled CM : components which ones having control of their own state and manage the behaviour by themselves
+4 . whats the meaning of lifting state up?
+4. In React, sharing state is done by movment it to the closest component that needs to do it
+5 . what is Refs and useRef hook?
+5.1. refs let you retain information between re-renders of a component
+.Unlike state, setting the ref`s current value does not trigger a re-render.
+5.2. useRef is a React Hook that lets you reference a value that`s not needed for rendering.
+6 . whats the meanig of stateful and stateles CM?
+6. stateful has  state and stateles doesn`t have state
+7 . why should we use {...props}?
+7. in this way we can get all props of component
