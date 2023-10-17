@@ -1,9 +1,3 @@
 import Form from "./components/Form"
-const App = () => {
-    return(
-        <>
-        <Form></Form>
-        </>
-    )
-}
+const App = () => <Form />
 export default App;
