@@ -41,5 +41,5 @@ export default function Form(props) {
             <br />
             <button style={styles.input} type="submit" ref={ButtonRef} disabled>Submit</button>
         </form>
-    );
-};
+    )
+}
