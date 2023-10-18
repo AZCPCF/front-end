@@ -16,19 +16,15 @@ export default function Form(props) {
     // styles
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [isEmailValid, setIsEmailValid] = useState(false)
-    const [isPasswordValid, setIsPasswordValid] = useState(false)
     const ButtonRef = useRef(false)
-    const isValid = () => isEmailValid && isPasswordValid ? ButtonRef.current.disabled = false : ButtonRef.current.disabled = true
+    const isValid = () => email.includes('@') && password.length >= 7 ? ButtonRef.current.disabled = false : ButtonRef.current.disabled = true
     const handleEmailChange = (event) => {
         setEmail(event.target.value)
-        setIsEmailValid(event.target.value.includes('@'))
         isValid()
     }
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value)
-        setIsPasswordValid(event.target.value.length >= 7)
         isValid()
     }
     // functions and hooks
