@@ -28,7 +28,7 @@ export default function Form(props) {
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value)
-        setIsPasswordValid(event.target.value.length >= 8)
+        setIsPasswordValid(event.target.value.length >= 7)
         isValid()
     }
     // functions and hooks
