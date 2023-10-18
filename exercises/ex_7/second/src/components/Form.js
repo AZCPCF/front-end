@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 export default function Form(props) {
     const styles = {
         form: {
@@ -16,26 +16,22 @@ export default function Form(props) {
     // styles
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const ButtonRef = useRef(false)
-    const isValid = () => email.includes('@') && password.length >= 7 ? ButtonRef.current.disabled = false : ButtonRef.current.disabled = true
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value)
-        isValid()
-    }
-
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value)
-        isValid()
-    }
-    // functions and hooks
     return (
         <form style={styles.form} onSubmit={e => e.preventDefault() + console.log(`email : ${email} \npassword : ${password}`)}>
             <p style={styles.p}>email : </p>
-            <input style={styles.input} placeholder='email' type="email" value={email} onChange={handleEmailChange} />
+            <input style={styles.input}
+                placeholder='email'
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)} />
             <p style={styles.p}>password : </p>
-            <input style={styles.input} placeholder='password' type="password" value={password} onChange={handlePasswordChange} />
+            <input style={styles.input}
+                placeholder='password'
+                type="password"
+                value={password}
+                onChange={e => setPassword(e.target.value)} />
             <br />
-            <button style={styles.input} type="submit" ref={ButtonRef} disabled>Submit</button>
+            <button style={styles.input} type="submit" disabled={!(email.includes('@') && password.length >= 7)}>Submit</button>
         </form>
     )
 }
