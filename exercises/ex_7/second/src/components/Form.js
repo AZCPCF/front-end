@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-export default function Form(props) {
+export default function Form(prlops) {
     const styles = {
         form: {
             background: props.bg, color: props.color, fontSize: props.fSize,
