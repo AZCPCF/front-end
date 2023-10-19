@@ -1,11 +1,12 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 export default function Form() {
-    const inputRef = useRef(null)
+    const inputRef = useRef(null);
+    const [s, setS] = useState(0);
     return (
         <>
             <div className="App">
-                <input type="text" onChange={e => inputRef.current.innerHTML = 'value :  '+ e.target.value}/>
-                <p ref={inputRef}>value : </p>
+                <input type="text" ref={inputRef} onChange={() => setS(s + 1)} />
+                <p >value : {inputRef.current ? inputRef.current.value : ""}  </p>
             </div>
         </>
     )

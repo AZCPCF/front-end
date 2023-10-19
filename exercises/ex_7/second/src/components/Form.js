@@ -14,7 +14,8 @@ export default function Form(props) {
         }
     }
     // styles
-    const [inputValues, setInputValues] = useState({ email: '', password: '' })
+    const [inputValues, setInputValues] = useState({ email: '', password: '' ,isDisabled : true})
+    const validate = () => !(inputValues.password.length >= 7 && inputValues.email.includes('@'))
     return (
         <form style={styles.form} onSubmit={e => e.preventDefault() + console.log(`email : ${inputValues.email} \npassword : ${inputValues.password}`)}>
             <p style={styles.p}>email : </p>
@@ -22,15 +23,15 @@ export default function Form(props) {
                 placeholder='email'
                 type="email"
                 value={inputValues.email}
-                onChange={e => setInputValues({ ...inputValues, email: e.target.value })} />
+                onChange={e => setInputValues({ ...inputValues, email: e.target.value , isDisabled : validate()})} />
             <p style={styles.p}>password : </p>
             <input style={styles.input}
                 placeholder='password'
                 type="password"
                 value={inputValues.password}
-                onChange={e => setInputValues({ ...inputValues, password: e.target.value })} />
+                onChange={e => setInputValues({ ...inputValues, password: e.target.value ,isDisabled : validate()})} />
             <br />
-            <button style={styles.input} type="submit" disabled={!(inputValues.password.length >= 7 && inputValues.email.includes('@'))}>
+            <button style={styles.input} type="submit" disabled={inputValues.isDisabled}>
                 Submit
             </button>
         </form>
