@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-export default function Form(props) {
+export default function Form2(props) {
     const styles = {
         form: {
             background: props.bg, color: props.color, fontSize: props.fSize,
@@ -14,7 +14,7 @@ export default function Form(props) {
         }
     }
     // styles
-    const [inputValues, setInputValues] = useState({ email: '', password: '' ,isDisabled : true})
+    const [inputValues, setInputValues] = useState({ email: '', password: '', isDisabled: true })
     const validate = () => !(inputValues.password.length >= 7 && inputValues.email.includes('@'))
     return (
         <form style={styles.form} onSubmit={e => e.preventDefault() + console.log(`email : ${inputValues.email} \npassword : ${inputValues.password}`)}>
@@ -23,13 +23,13 @@ export default function Form(props) {
                 placeholder='email'
                 type="email"
                 value={inputValues.email}
-                onChange={e => setInputValues({ ...inputValues, email: e.target.value , isDisabled : validate()})} />
+                onChange={e => setInputValues({ ...inputValues, email: e.target.value, isDisabled: validate() })} />
             <p style={styles.p}>password : </p>
             <input style={styles.input}
                 placeholder='password'
                 type="password"
                 value={inputValues.password}
-                onChange={e => setInputValues({ ...inputValues, password: e.target.value ,isDisabled : validate()})} />
+                onChange={e => setInputValues({ ...inputValues, password: e.target.value, isDisabled: validate() })} />
             <br />
             <button style={styles.input} type="submit" disabled={inputValues.isDisabled}>
                 Submit
