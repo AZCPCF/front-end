@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.Formik{
+  width: 300px;
+  height: 350px;
+  margin: 10% auto;
+  box-shadow: 0px 0px 25px 0px  #000;
+  border-radius: 12px;
+  text-align: center;
+  padding: 25px 50px;
+}
+input,button{
+  width: 250px;
+  height: 25px;
+}
+button{
+  width: 257px;
+  margin-top: 10px;
+}
