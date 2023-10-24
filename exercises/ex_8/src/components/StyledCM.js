@@ -29,7 +29,6 @@ const Img = styled.img`
     width:200px;
     height:175px;
     border-radius:8px;
-    background-image: url('./Mobile.jpg');
     margin:10px 7.5%;
 `
 const P = styled.p`
