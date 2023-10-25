@@ -1,0 +1,171 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body onmousemove="mouseOver(event)">
+    <label for="">left to right</label>
+    <input type="checkBox" id="leftToRight" onclick="changeInputValue(event)">
+    <label for="">top to bottom</label>
+    <input type="checkBox" id="topToBottom" onclick="changeInputValue(event)">
+    <div class="box" id="box"></div>
+    <script>
+        function changeInputValue(e) {
+            e.target.value == 'on' ? e.target.value = 'off' : e.target.value = 'on'
+        }
+        function mouseOver(event) {
+            console.log(document.getElementById('topToBottom').value)
+            console.log(document.getElementById('leftToRight').value)
+
+            if (document.getElementById('topToBottom').value == 'off' && document.getElementById('leftToRight').value == 'off') {
+                document.getElementById('box').style.margin = `${event.clientY - 100}px ${event.clientX - 50}px`
+            }
+            else if (document.getElementById('leftToRight').value == 'off') {
+                document.getElementById('box').style.marginLeft = `${event.clientX - 50}px`
+            }
+            else if (document.getElementById('topToBottom').value == 'off') {
+                document.getElementById('box').style.marginTop = `${event.clientY - 100}px`
+
+            }
+
+            //console.log(event.clientX)
+
+        }
+    </script>
+</body>
+
+</html>
+
+if (document.getElementById('leftToRight').value == 'off' && document.getElementById('topToBottom').value == 'off') {
+    document.getElementById('box').style.margin = `0px ${event.clientX - 50}px`
+}  -->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: #f2f2f2;
+            position: relative;
+            animation-name: example;
+            animation-duration: 250ms;
+            animation-play-state: paused;
+            animation-iteration-count: unset;
+        }
+
+        @keyframes example {
+            0% {
+                display: block;
+                opacity: 1;
+            }
+            50%{
+                display: block;
+                opacity: .5;
+            }
+            100%{
+                display: none;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <button onclick="hideParent()">Hide Parent</button>
+    </div>
+
+    <script>
+        function hideParent() {
+            var parent = document.querySelector('.parent');
+            parent.style.animationPlayState = 'running';
+            parent.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html> -->
+<!-- Button trigger modal -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h2>Example of creating Modals with Twitter Bootstrap</h2>
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+
+                    <h4 class="modal-title" id="myModalLabel">
+                        This Modal title
+                    </h4>
+                </div>
+
+                <div class="modal-body">
+                    Add some text here
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+
+                    <button type="button" class="btn btn-primary">
+                        Submit changes
+                    </button>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+
+    </div><!-- /.modal -->
+    <script>
+        $('#identifier').modal(options)
+    </script>
+</body>
+
+</html>

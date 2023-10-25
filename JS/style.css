@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.selectType {
+    width: 300px;
+    height: 310px;
+    margin: 12% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px 0px yellow;
+    animation-name: noneDisplay;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-iteration-count: unset;
+}
+
+#Game {
+
+    width: 300px;
+    height: 310px;
+    margin: 12% auto;
+    background-color: red;
+    display: none;
+    animation-name: ShowGame;
+    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-iteration-count: unset;
+}
+
+.selectType>select {
+    background-color: black;
+
+}
+.selectType>input,
+select {
+    width: 225px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    background-color: unset;
+}
+
+#hideBut:hover {
+    background-color: yellow;
+    color: black;
+}
+
+@keyframes noneDisplay {
+    0% {
+        display: flex;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes ShowGame {
+    0% {
+        display: none;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}
