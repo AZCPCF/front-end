@@ -1,14 +1,9 @@
 import { useFormik } from 'formik'
-import * as Yup from 'yup'
 import '../App.css'
+import { YupValidation } from '../validations'
 const Form = () => {
-    const YupValidation = () => {
-        return Yup.object({
-            email: Yup.string().email('email is invalid').required('Required'),
-            password: Yup.string().min(12, "password length can't under 12 character").required('Required')
-        })
-    }
-    const Formik = useFormik({
+
+    const formik = useFormik({
         initialValues: {
             email: '',
             password: ''
@@ -19,13 +14,13 @@ const Form = () => {
         validationSchema: YupValidation()
     })
     return (
-        <form onSubmit={Formik.handleSubmit} className={'Formik'}>
+        <form onSubmit={formik.handleSubmit} className={'formik'}>
             <label htmlFor='email'>Email</label><br />
-            <input type='email' placeholder='simpleEmail@email.simple' id='email' onBlur={Formik.handleBlur} onChange={Formik.handleChange} value={Formik.values.email} /><br />
-            {Formik.touched.email && Formik.errors.email ? <p style={{ color: 'red' }}>{Formik.errors.email}</p> : null}
+            <input type='email' placeholder='simpleEmail@email.simple' id='email' onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.email} /><br />
+            {formik.touched.email && formik.errors.email ? <p style={{ color: 'red' }}>{formik.errors.email}</p> : null}
             <label htmlFor='password'>Password</label><br />
-            <input type='password' placeholder='password' id='password' onBlur={Formik.handleBlur} onChange={Formik.handleChange} value={Formik.values.password} /><br />
-            {Formik.touched.password && Formik.errors.password ? <p style={{ color: 'red' }}>{Formik.errors.password}</p> : null}
+            <input type='password' placeholder='password' id='password' onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.password} /><br />
+            {formik.touched.password && formik.errors.password ? <p style={{ color: 'red' }}>{formik.errors.password}</p> : null}
             <button type="submit">Login</button>
         </form>
     )

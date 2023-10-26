@@ -1,6 +1,5 @@
-import StyledCM from './StyledCM'
+import { ParentDiv, P, Img } from './StyledCM'
 const Products = () => {
-    const { ParentDiv, P, Img } = StyledCM
     let Products = []
     let titles = ["Mobile", "Laptop"]
     let CompanyNames = ["Sony", "Apple", "SAMSUNG", "XIAOMI", "Razer", "Asus"]
@@ -22,3 +21,4 @@ const Products = () => {
     return Products
 }
 export default Products
+// 

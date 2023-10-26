@@ -1,8 +1,7 @@
 import Products from './Products'
-import StyledCM from './StyledCM'
+import { Body, Grid, Button, GeneratorForm, Span } from './StyledCM'
 import { useState } from 'react'
 const ProductGenerator = () => {
-    const { Body, Grid, Button, GeneratorForm, Span } = StyledCM
     const [WhichBut, setWhichBut] = useState(0)
     return (
         <>
