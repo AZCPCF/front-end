@@ -43,7 +43,7 @@ export const Button = styled.button`
     border-radius:8px;
     border:unset;
 `
-export const GeneratorForm = styled.div`
+export const Form = styled.div`
     width:300px;
     padding:100px;
     margin:5% auto;
