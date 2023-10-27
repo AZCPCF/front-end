@@ -4,12 +4,11 @@ const ProductGenerator = () => {
 
     const [WhichBut, setWhichBut] = useState(0)
     const [whenClicked, setWhenClicked] = useState([])
-    const [clickedTime, setClickedTime] = useState(0)
-    const Products = (p) => {
+    const Products = () => {
         let products = []
         let titles = ["Mobile", "Laptop"]
         let CompanyNames = ["Sony", "Apple", "SAMSUNG", "XIAOMI", "Razer", "Asus"]
-        for (let i = 1; i <= Math.floor(p) * 20; i++) {
+        for (let i = 1; i <= 20; i++) {
             let title = Math.round(Math.random())
             let CompanyName = Math.floor(Math.random() * CompanyNames.length)
             products = [...products, { id: i, title: titles[title], content: CompanyNames[CompanyName] }]
@@ -26,13 +25,11 @@ const ProductGenerator = () => {
                             'Click Generate to Generate 20 random products and Click Clear to delete products'}
                 </Span>
                 <Button onClick={() => {
-                    setClickedTime(clickedTime +  1)
-                    setWhenClicked([...whenClicked, ...Products(clickedTime)])
+                    setWhenClicked([...whenClicked, ...Products()])
                     setWhichBut(1)
                 }}>Generate</Button>
                 <Button onClick={() => {
                     setWhenClicked([])
-                    setClickedTime(0)
                     setWhichBut(2)
                 }} disabled={WhichBut === 0 ? true : WhichBut === 2 ? true : false}>Clear</Button>
             </GeneratorForm>
