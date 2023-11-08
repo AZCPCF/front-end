@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            font-size: 36px;    
+            color:#fff;
+            background-color: #000;
+        }
+
+        .container {
+            width: 1320px;
+            height: 660px;
+            display: flex;
+            margin-top: 30px;
+            margin-left: 100px;
+            flex-direction: column;
+            /*justify-content: center;*/
+            /*background-color: redviolet;*/
+            background-color: #000;
+            box-shadow: 0px 0px 50px 0px red;
+            border: 1px solid red;
+            border-radius: 12px;
+        }
+        .row1{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+        input,select{
+            width: 500px;
+            height: 50px;
+            border-radius: 8px;
+            padding-left: 10px;
+            border: 2px solid #000;
+            box-shadow: 0px 0px 50px 0px red;
+        }
+        ::placeholder{
+            color: #fff;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            padding-left: 10px;
+            border: 2px solid #000;
+            margin-left: 530px;
+            box-shadow: 0px 0px 50px 20px red;
+            margin-top: 100px;
+            color: white;
+            background-color: black;
+        }
+        button:hover{
+            background-color: red;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="box"><input type="text" name="" placeholder="Name" id=""></div>
+            <div class="box"><input type="text" name="" placeholder="Last Name" id=""></div>
+        </div>
+        <div class="row1">
+            <div class="box"><input type="text" name="" placeholder="Phone Number"  id=""></div>
+            <div class="box"><input type="email" name="" placeholder="Email" id=""></div>
+        </div>
+        <div class="row1">
+            <div class="box">
+                <select name="" id="countries" onchange="changeCity()">
+                    <option value="selectCountry">please select country ...</option>
+                    <option value="Iran">Iran</option>
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Usa">Usa</option>
+                </select>
+            </div>
+            <div class="box">
+                <select name="" id="cities">
+                    <option value="-1">select city</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">buy a ticket</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

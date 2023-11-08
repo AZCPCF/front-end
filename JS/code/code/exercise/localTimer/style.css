@@ -1,0 +1,22 @@
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    font-size: 42px;
+    background-color: #000;
+    color:  #00ffff;
+    font-family: inter;
+}
+.local{
+    width: 550px;
+    height: 200px;
+    margin-left: 500px;
+    border-radius: 8px;
+    margin-top: 250px;
+    border: 2px solid #00ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

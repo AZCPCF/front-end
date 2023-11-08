@@ -1,7 +1,7 @@
 import React from 'react'
-
+import {P} from '../components/styledCM'
 export default function FirstTime() {
   return (
-    <p>FirstTime</p>
+    <P>Hello World !</P>
   )
 }

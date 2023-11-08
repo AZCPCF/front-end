@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>index</title>
+    <style>
+        /* .true {
+            background-color: yellow;
+        } */
+
+        * {
+            background-color: #000;
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #d8d6d3;
+
+        }
+
+        .lamp {
+            width: 200px;
+            height: 300px;
+            background-color: #000;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 275px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+            color: #d8d6d3;
+        }
+
+        .onOff {
+            width: 150px;
+            height: 50px;
+            color: #000;
+            margin-top: 150px;
+            border-radius: 12px;
+        }
+        h1{
+            border: 4px solid #d8d6d3;
+            border-radius: 8px;
+        }
+        
+        .bgColor {
+            background-color: yellow;
+            box-shadow: 0px 0px 50px 0px yellow;
+            color: #000;
+            border: unset;
+            height: 280px;
+            line-height: 280px;
+        }
+        .bgcolor2{
+            border: 2px solid #d8d6d3;
+            background-color: unset;
+            color: #fff;
+            box-shadow: unset;
+        }
+        button{
+            background-color: yellow;
+            box-shadow: 0px 0px 50px 0px yellow;
+            border: unset;
+            /* height: 280px; */
+            /* line-height: 280px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lamp">
+            <h1>lamp</h1>
+        </div>
+
+        <button onclick="onoff()" class="onOff">ON</button>
+    </div>
+    <script>
+        let lamp = document.querySelector('h1');
+        let button = document.querySelector('button');
+        let counter = 0;
+
+        function onoff() {
+            if (counter%2===0) {
+                button.innerHTML= 'OFF';
+            } else{
+                button.innerHTML= 'ON';
+            }
+            counter++;
+            lamp.classList.toggle('bgColor');
+            button.classList.toggle('bgcolor2');
+        }
+    </script>
+</body>
+
+</html>

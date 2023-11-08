@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jQuery.js"></script>
+    <title>index</title>
+    <style>
+        * {
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 550px;
+            width: 400px;
+            height: 300px;
+            margin-top: 200px;
+            border-radius: 12px;
+            background-color: #ff5500;
+            box-shadow: 0px 0px 50px #ff5500;
+        }
+
+        input,
+        button {
+            border: 1px solid #000;
+            border-radius: 4px;
+            width: 250px;
+            margin-left: 75px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+    <input type="text" id="userrname" placeholder="username" class="username">
+    <input type="password" id="password" placeholder="password" class="password">
+    <button type="submit" onclick="submitFunc();">submit</button>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

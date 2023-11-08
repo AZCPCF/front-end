@@ -25,7 +25,7 @@
         #box {
             width: 350px;
             height: 350px;
-            /*box-shadow: 0px 0px 25px 0px black;*/
+            box-shadow: 0px 0px 25px 0px black;
             background-color: black;
             border-radius: 4px;
             text-align: center;
@@ -51,10 +51,13 @@
     </div>
     <script>
         function changeBoxColor() {
-            const $ = document
-            let rgb = `rgb(${$.getElementById('R').value},${$.getElementById('G').value},${$.getElementById('B').value})`
-            $.getElementById('box').style.backgroundColor = rgb
-            // $.getElementById('box').style.boxShadow = `0px 0px 25px 0px ${rgb}`
+            let R = document.getElementById('B').value
+            let G = document.getElementById('G').value
+            let B = document.getElementById('R').value
+            let RGB = `${R},${G},${B}`
+            console.log(RGB)
+            document.getElementById('box').style.backgroundColor = `rgb(${RGB})`
+            // document.getElementById('box').style.boxShadow = `0px 0px 25px 0px rgb(${RGB})`
         }
     </script>
 </body>

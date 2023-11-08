@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
-import Form from './components/Form'
-import ProductGenerator from './components/ProductGenerator'
+import './App.css'
+import { useEffect, useState ,useRef} from 'react'
 const App = () => {
-    const [SelectComponent, setSelectComponent] = useState(0)
-    const ml = {marginLeft: '10px'}
-    return (
-        <>
-            <button style={ml} onClick={() => setSelectComponent(1)} disabled={SelectComponent === 1 ? true : false}>ex_1</button>
-            <button style={ml} onClick={() => setSelectComponent(2)} disabled={SelectComponent === 2 ? true : false}>ex_2</button>
-            {SelectComponent === 1 ? <Form /> : SelectComponent === 2 ? <ProductGenerator /> : null}
-        </>
-    )
+    const [title, setTitle] = useState(0)
+    const buttonRef = useRef('clicked')
+    useEffect(() => {
+        document.title = `clicked ${title} times`
+        buttonRef.current.innerText = `button ${title}`
+        console.log(title)
+    }, [title,buttonRef])
+    return <button ref={buttonRef} onClick={() => setTitle(title + 1)}>click</button>
 }
 
 export default App

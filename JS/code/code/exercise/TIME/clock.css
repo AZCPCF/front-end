@@ -1,0 +1,45 @@
+@font-face {
+    font-family: inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    background-color: #000000;
+    font-family: inter;
+    color: #ffffff;
+}
+
+.clockT {
+    width: 728px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: unset;
+}
+.clock {
+    width: 300px;
+    height: 200px;
+    margin-left: 618px;
+    border-radius: 8px;
+    margin-top: 150px;
+    border: 2px solid #ff5500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 56px;
+}
+
+#info {
+    position: fixed;
+    margin-top: 190px;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 75px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: solid;
+}
+p{
+    position: fixed;
+    bottom: 0px;
+}

@@ -1,0 +1,54 @@
+@font-face {
+    font-family: inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html {
+    font-family: inter;
+    background-color: #000;
+}
+
+.calculator {
+    width: 500px;
+    height: 650px;
+    margin-left: 475px;
+    margin-top: 25px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #000dff, #00ff00);
+    box-shadow: 10px 10px 100px 10px #000;
+}
+
+.result {
+    width: 488px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin-left: 3.5px;
+    position: relative;
+    top: 6px;
+    opacity: .3;
+    border: 1px solid #000;
+}
+input {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #ff5500;
+    font-size: 32px;
+    color: #fff;
+}
+
+
+.margin{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+#a{
+    width: 85%;
+    margin-top: 35px;
+    background: linear-gradient(to right, #00ff00 ,  #000dff );
+}
+#C{
+    background-color: #000dff;
+}

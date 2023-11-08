@@ -27,7 +27,10 @@
 <body onmousemove="mouseOver(event)">
     <div class="box" id="box"></div>
     <script>
-        const mouseOver = event => document.getElementById('box').style.margin = `${event.clientY - 100}px ${event.clientX - 100}px`
+        function mouseOver(event) {
+            console.log(event)
+            // document.getElementById('box').style.margin = `${event.clientY - 100}px ${event.clientX - 100}px`
+        }
     </script>
 </body>
 

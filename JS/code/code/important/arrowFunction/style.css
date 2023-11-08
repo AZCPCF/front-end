@@ -1,0 +1,8 @@
+@font-face {
+    font-family: inter;
+    src: url(font/Inter-VariableFont_slnt\,wght.ttf);
+}
+html{
+    font-family: inter;
+    background-color: #000;
+}

@@ -1,0 +1,76 @@
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    font-family: inter;
+    background-color: #000;
+    color: #FFF;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 275px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.stop {
+    width: 100px;
+    height: 25px;
+    border: 1px solid #FF5500;
+    border-radius: 4px;
+    line-height: 23px;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.stop:hover {
+    line-height: 23px;
+    background-color: #FF5500;
+    color: #000;
+}
+
+.reset {
+    width: 100px;
+    height: 25px;
+    background-color: unset;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    line-height: 24px;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.reset:hover {
+    background-color: aqua;
+    color: #000;
+    border: 0;
+    line-height: 25px;
+}
+
+.start {
+    width: 100px;
+    height: 25px;
+    border: 1px solid springgreen;
+    background-color: unset;
+    border-radius: 4px;
+    line-height: 24px;
+    color: #FFF;
+    margin-right: 20px;
+}
+
+.start:hover {
+    line-height: 24px;
+    background-color: springgreen;
+    border: 0;
+    color: #000;
+}

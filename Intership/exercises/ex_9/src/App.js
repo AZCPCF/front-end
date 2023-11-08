@@ -1,5 +1,5 @@
 import { HeaderDiv, Link } from './components/styledCM'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Modal from './components/Modal'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
@@ -29,7 +29,7 @@ export default function App() {
                 >Contact us</Link>
             </HeaderDiv>
             <Modal open={isOpen} setIsOpen={handleModalButton}>
-                {page === -1 ? <p>hello wordl</p> : page === 1 ? <ContactUs /> : page === 0 ? <AboutUs setPagee={() => setPage(1)} /> : null}
+                {page === -1 ? <FirstTime/> : page === 1 ? <ContactUs /> : page === 0 ? <AboutUs setPagee={() => setPage(1)} /> : null}
             </Modal>
         </div>
     )

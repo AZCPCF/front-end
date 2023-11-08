@@ -72,7 +72,7 @@ export const Button = styled.button`
 width:200px;
 background-color:rgb(0,0,100);
 color:white;
-box-shadow:0px 0px 25px 0px rgb(0,0,100);
+box-shadow:0px 0px 25px 0px rgb(0,,100);
 user-select: none;
 border-radius:2px;
 height:30px;
@@ -92,4 +92,7 @@ margin-left:1250px;
 
 border: unset;
 bottom:60px;
+`
+export const P = styled.p`
+font-size:24px;
 `

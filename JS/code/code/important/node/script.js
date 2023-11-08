@@ -1,0 +1,18 @@
+let h1 = document.getElementById('h3')
+console.log(h1.nodeType)
+console.log(h1.nodeName)
+console.log(h1.parentNode)
+console.log(h1.parentElement)
+console.log(h1.previousElementSibling)
+console.log(h3.nextElementSibling)
+console.log(ulLi[3].nextSibling)
+const $ = document
+let h2 = $.querySelector('h2')
+let h3 = $.querySelector('h3')
+let h4 = $.querySelector('h4')
+let h5 = $.querySelector('h5')
+let h6 = $.querySelector('h6')
+let ulLi = $.querySelectorAll('.ulLi')
+
+console.log(h3.nextElementSibling)
+console.log(ulLi[3].nextSibling)

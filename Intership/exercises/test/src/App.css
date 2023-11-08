@@ -13,6 +13,7 @@
   }
 }
 .App-header {
+  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -73,4 +74,9 @@ button {
 button {
   width: 257px;
   margin-top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

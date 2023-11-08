@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>calculator</title>
+</head>
+
+<body>
+	<form name="form1">
+		<!-- calculator -->
+		<div class="calculator">
+			<!-- result -->
+			<input id="calc" type="text" name="answer" class="result">
+			<!-- rowOne -->
+			<input class="margin" type="button" value="1" onclick="form1.answer.value += '1' ">
+			<input class="margin" type="button" value="2" onclick="form1.answer.value += '2' ">
+			<input class="margin" type="button" value="3" onclick="form1.answer.value += '3' ">
+			<input class="margin" id="C" type="button" value="C" onclick="form1.answer.value = ' ' " id="clear">
+			<!-- rowTwo -->
+			<input class="margin" type="button" value="4" onclick="form1.answer.value += '4' ">
+			<input class="margin" type="button" value="5" onclick="form1.answer.value += '5' ">
+			<input class="margin" type="button" value="6" onclick="form1.answer.value += '6' ">
+			<input class="margin" type="button" value="+" onclick="form1.answer.value += '+' ; " id="plus">
+			<!-- rowThree -->
+			<input class="margin" type="button" value="7" onclick="form1.answer.value += '7' ">
+			<input class="margin" type="button" value="8" onclick="form1.answer.value += '8' ">
+			<input class="margin" type="button" value="9" onclick="form1.answer.value += '9' ">
+			<input class="margin" type="button" value="-" onclick="form1.answer.value += '-' ">
+			<!-- rowFour -->
+			<input class="margin" type="button" value="/" onclick="form1.answer.value += '/' ">
+			<input class="margin" type="button" value="0" onclick="form1.answer.value += '0' ">
+			<input class="margin" type="button" value="." onclick="form1.answer.value += '.' ">
+			<!-- clickToResult -->
+			<input class="margin" type="button" value="*" onclick="form1.answer.value += '*' ">
+			<input class="margin" id="a" type="button" value="="
+				onclick="form1.answer.value = eval(form1.answer.value) ">
+		</div>
+
+	</form>
+</body>
+
+</html>

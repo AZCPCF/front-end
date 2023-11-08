@@ -9,15 +9,18 @@ export default function Modal({ open, children, setIsOpen, ref }) {
     }
     return createPortal(
         <>
-        {open &&
-            <ModalDiv className="modal-content modal" style={modal_contnet} onClick={e => e.stopPropagation()}>
-                <Close onClick={setIsOpen}>&times;</Close>
+            {open &&
                 <div>
-                    <div className="modal-body">
-                        {children}
-                    </div>
+
+                    <ModalDiv className="modal-content modal" style={modal_contnet} onClick={e => e.stopPropagation()}>
+                        <Close onClick={setIsOpen}>&times;</Close>
+                        <div>
+                            <div className="modal-body">
+                                {children}
+                            </div>
+                        </div>
+                    </ModalDiv>
                 </div>
-            </ModalDiv>
             }
         </>,
         document.getElementById('portal')

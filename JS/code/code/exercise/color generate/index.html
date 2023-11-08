@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Color Generator</title>
+</head>
+
+<body>
+    <button type="submit" onclick="generateColor()">click</button>
+    <script src="script.js"></script>
+    <span id="color"></span>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon.svg" type="image/x-icon">
+    <title>Random Color Generator</title>
+</head>
+<body>
+    <div class="centeredBox glass">
+        <div class="textHolder tooltip">
+            <span class="tooltiptext" id="tooltip">
+                Click to copy to clipboard.
+            </span>
+            <input type="button" id="color" class="colorHolder" placeholder="..." onfocus="this.placeholder = ''" onblur="this.placeholder = '...'"/>
+        </div>
+        <button class="glowingButton" id="generator">
+            Generate new color
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

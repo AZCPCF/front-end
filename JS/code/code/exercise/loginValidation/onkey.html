@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 250px;
+            margin-top: 5px;
+        }
+        .span1,
+        .span2 {
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <input type="text" class="username" onkeydown="usernameKey()">
+        <span class="span1">under 12</span>
+        <input type="text" class="password" onkeydown="passwordKey()">
+        <span class="span2">under 8</span>
+<input type="submit" value="submit">
+    </div>
+    <script src="onkey.js"></script>
+</body>
+
+</html>

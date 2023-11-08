@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            padding-left: 25px;
+        }
+
+        button {
+            width: max-content;
+            padding: 25px;
+            height: 50px;
+            text-align: center;
+            line-height: 0px;
+            border: unset;
+            border-radius: 8px;
+            background-color: red;
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="opFunc('plus')">plus 3 random number from array</button>
+    <button onclick="opFunc('minus')">minus 3 random number from array</button>
+    <button onclick="plusAll()">plus All</button>
+    <p id="p"></p>
+    <script>
+        let numbersLentgh = prompt('enter array length')
+        const p = document.getElementById('p')
+        let numbers = []
+        for (let index = 0; index < numbersLentgh; index++) {
+            numbers.push(Math.round(Math.random() * 101))
+        }
+        const opFunc = (params) => {
+            let res = 0
+            let op
+            params === 'minus' ? op = ' - ' : op = ' + '
+            let selectedNummbers = []
+            for (let index = 0; index < 3; index++) {
+                let selectNumber = numbers[Math.floor(Math.random() * numbers.length)]
+                if (params === 'minus') {
+                    if (index === 0) {
+                        res = selectNumber
+                        selectedNummbers.push(selectNumber)
+                    } else {
+                        res -= selectNumber
+                        selectedNummbers.push(selectNumber)
+
+                    }
+                } else {
+                    let selectNumber = numbers[Math.floor(Math.random() * numbers.length)]
+                    res += selectNumber
+                    selectedNummbers.push(selectNumber)
+                }
+            }
+            p.innerHTML = `result : ${selectedNummbers.join(op)} = ${res}`
+        }
+        const plusAll = () => {
+            let res = 0
+            let selectedNummbers = []
+            for (let index = 0; index < numbers.length; index++) {
+                res += numbers[index]
+            }
+            p.innerHTML = `result : ${numbers.join(' + ')} = ${res}`
+        }
+    </script>
+</body>
+
+</html>
