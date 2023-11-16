@@ -10,11 +10,10 @@ const App = () => {
     const [productsPerPage] = useState(4)
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-    const api = create({ baseURL: 'http://api.dadekavwebtools/api/' })
+    const api = create({ baseURL: 'https://rickandmortyapi.com' })
     const getData = async () => {
-        const response = await api.get('article')
+        const response = await api.get('/api/character/')
         setLoading(false)
-        console.log(response);
         setProducts(response.data.results)
         response.ok ? toast.success('Promise resolved ✅') : toast.error('Promise rejected ❌')
     }
