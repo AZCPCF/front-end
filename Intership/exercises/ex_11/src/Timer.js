@@ -1,0 +1,1 @@
+// ghabeliat moratab sazi bar asas kamtarin,bishtarin hazine,gadid tarin ,ghadimi tarin

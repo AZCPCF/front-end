@@ -2,14 +2,14 @@
 // variable
 // 
 var hour = Math.round(prompt('hour', 0));
+var minute = Math.round(prompt('minute', 0));
+var second = Math.round(prompt('second', 0));
 checkNull(hour);
 isNumber(hour);
 console.log(hour);
-var minute = Math.round(prompt('minute', 0));
 checkNull(minute);
 isNumber(minute);
 under60(minute);
-var second = Math.round(prompt('second', 0));
 checkNull(second);
 isNumber(second);
 under60(second);

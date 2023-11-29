@@ -22,6 +22,17 @@ export const Link = styled.div`
     border:2px solid rgb(100,0,255);
     border-radius:4px;
     `
+export const Close = styled.button`
+    background-color:unset;
+    font-size:48px;
+    position:relative;
+    margin-top:-1000px;
+    border:unset;
+    user-select: none;
+    margin-left:1250px;
+    border: unset;
+    bottom:60px;
+    `
 export const ModalDiv = styled.div`
     user-select: none;
     padding-top: 100px;
@@ -80,18 +91,6 @@ margin:0 auto;
 border: unset;
 margin-top:30px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-`
-export const Close = styled.button`
-background-color:unset;
-font-size:48px;
-position:relative;
-margin-top:-1000px;
-border:unset;
-user-select: none;
-margin-left:1250px;
-
-border: unset;
-bottom:60px;
 `
 export const P = styled.p`
 font-size:24px;

@@ -17,7 +17,7 @@ const App = () => {
         setProducts(response.data.results)
         response.ok ? toast.success('Promise resolved ✅') : toast.error('Promise rejected ❌')
     }
-    useEffect(() => getData(), [])
+    useEffect(() => {getData()}, [])
 
     return (
         <>
